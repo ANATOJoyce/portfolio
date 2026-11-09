@@ -1318,3 +1318,40 @@ header {
     }
 }
 
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.social-link {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    color: inherit;
+    transition: transform .25s ease, background .25s ease, color .25s ease;
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-link:hover {
+    transform: translateY(-4px);
+    background: #0a66c2;
+    /* bleu LinkedIn */
+    border-color: #0a66c2;
+    color: #fff;
+}
+
+.social-link:nth-child(2):hover {
+    background: #24292f;
+    /* noir GitHub */
+    border-color: #24292f;
+}
